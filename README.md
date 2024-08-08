@@ -44,7 +44,7 @@ app.layout = html.Div([
                 {'label':'Yearly Statistics', 'value':'Yearly Statistics'},
                 {'label':'Recession Period Statistics', 'value':'Recession Period Statistics'}
                 ],
-            value='Select Statistics',
+            value='Yearly Statistics',
             placeholder='Select a report type',
             style={'width':'80%', 'padding': '3px', 'font-size':20, 'testAlign':'center'}
         )
@@ -52,7 +52,7 @@ app.layout = html.Div([
     html.Div(dcc.Dropdown(
             id='select-year',
             options=[{'label': i, 'value': i} for i in year_list],
-            value='Select-year',
+            value=1980,
             placeholder='Select Year',
             style={'width':'80%', 'padding': '3px', 'font-size':20, 'testAlign':'center'}
         )),
