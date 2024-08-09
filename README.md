@@ -164,7 +164,7 @@ def update_output_container(selected_statistics, input_year):
   # Plot bar chart for average number of vehicles sold during the given year
          # grouping data for plotting.
          # Hint:Use the columns Year and Automobile_Sales
-        avr_vdata=yearly_data.groupby('Year')['Automobile_Sales'].mean(),reset_index()
+        avr_vdata=yearly_data.groupby('Year')['Automobile_Sales'].mean().reset_index()
         Y_chart3 = dcc.Graph(
             figure=px.bar(avr_vdata,
             x='Year',
